@@ -8,6 +8,7 @@ lua54 'yes'
 
 client_scripts {
     '@NativeUI/NativeUI.lua', 
+    '@Freech_HUD/client/client.lua',
     'config.lua',
     'client.lua',
     'hud.lua'
