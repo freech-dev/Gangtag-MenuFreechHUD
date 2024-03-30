@@ -35,7 +35,7 @@ Citizen.CreateThread(function()
 		Wait(0);
 		local enabled = Config.gangtag_hud.enabled;
 		if enabled then 
-			TriggerEvent('freech-hud:UpdateHeadtagClient', playerGangTag);
+			TriggerEvent('freech-hud:UpdateGangtagClient', playerGangTag);
 		end
 	end
 end)
