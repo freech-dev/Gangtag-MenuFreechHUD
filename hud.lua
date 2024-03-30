@@ -35,15 +35,7 @@ Citizen.CreateThread(function()
 		Wait(0);
 		local enabled = Config.gangtag_hud.enabled;
 		if enabled then 
-			local disp = Config.gangtag_hud.defaultText;
-			local scale = Config.gangtag_hud.fontSize;
-			local x = Config.gangtag_hud.x;
-			local y = Config.gangtag_hud.y;
-
-			if (disp:find("{GANGTAG}")) then 
-				disp = disp:gsub("{GANGTAG}", playerGangTag);
-			end 
-			txtGang(x, y, 1.0, 1.0, scale, disp, 255,255,255,255);
+			TriggerEvent('freech-hud:UpdateHeadtagClient', playerGangTag);
 		end
 	end
 end)
